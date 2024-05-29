@@ -1,0 +1,161 @@
+body {
+ background-color: #606c38; 
+}
+
+.container {
+    background-color: wheat;
+    padding: 50px 50px;
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.panel {
+    padding: 25px 50px;
+    border: 1px solid black;
+}
+
+#kuladeep {
+    background-color: wheat;
+    /* height: 300px; */
+    border-top: none;
+    border-left: none;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+#yashwanth {
+    background-color: wheat;
+    /* height: 300px; */
+    border-top: none;
+    border-right: none;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+#sai {
+    background-color: wheat;
+    /* height: 300px; */
+    border-bottom: none;
+    border-left: none;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+#pranav {
+    background-color: wheat;
+    /* height: 300px; */
+    border-bottom: none;
+    border-right: none;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+img {
+    width:180px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 0 31%;
+}
+
+img .yashwanth {
+    border-radius: 70%;
+}
+
+
+/* body {
+    background-color: #d7e3fc;
+}
+
+div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+img {
+    width:200px;
+    max-width: 100%;
+    border-radius: 50%;
+    float: none;
+    margin:0px 5px 2px 5px;
+}
+li
+{
+    list-style: none;
+}
+#row {
+    justify-content: space-evenly;
+    background-color: #f0efeb;
+    height: 500px;
+    width: 100%;
+    max-width:960px;  
+}
+ .row-1 {
+    margin: 20px 50px 0px 250px;
+
+    
+}
+
+.row-2 {
+    margin: 0px 50px 0px 250px;
+    
+} 
+
+.kuladeep {
+    border-radius: 5% 0% 0% 0%;
+    background-color: aqua;
+    border-right: 1px solid black;
+    border-bottom:1px solid black ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+.yashwanth {
+    border-radius: 0% 5% 0% 0%;
+    background-color: aqua;
+}
+
+.sai {
+    border-radius: 0% 0% 0% 5%;
+    background-color: aqua;
+}
+
+.pranav {
+    border-radius: 0% 0% 5% 0%;
+    background-color: aqua;
+}
+
+   
+
+#panel {
+    
+    height: 500px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.lines
+{
+    font-weight:600;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px 0px;
+
+}
+footer {
+    height: 200px;
+    background-color: blue;
+}
+.kuladeep:hover{
+    background-color: black;
+
+} */

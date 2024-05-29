@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: linear-gradient(45deg,#061de3,#e306ca);
+    font-family: Helvetica, sans-serif ;
+    color:rgb(211,211,211);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+}
+.block1,.block2{
+    width:700px;
+    height:500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.container {
+    width: 300px;
+    height:500px;
+     perspective: 500px; 
+}
+.card{
+    width: 300px;
+    height:500px;
+    position:relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front,.back{
+    width: 300px;
+    height:500px;
+    border-radius: 2rem;
+    box-shadow:0 0 5px 2px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+}
+/* .front{
+    background-image: url(https://source.unsplash.com/random/350x500);
+} */
+#second{
+    margin-right: 0;
+}
+#third{
+    margin-left: 0;
+}
+.back{
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+} 
+@media (max-width:1232px) {
+    body{
+        display: flex;
+        flex-direction: column;
+       align-content: space-around;
+        align-items: center;
+    }
+    .block2{
+        margin:50px 0px;
+    }
+
+}
+@media(max-width:674px)
+{
+    .block1,.block2{
+        display: flex;
+        flex-direction: column;
+       align-content: space-around;
+        align-items: center;
+        height:1400px;
+
+    }
+    .container{
+        margin: 100px,50px;
+    }
+
+}
+.card-link {
+    border: 1px solid grey;
+    margin-left: 70px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: medium;
+    padding: 5px 10px;
+}
+.card-img{
+    padding-top: 20px;
+    width:200px;
+    height:220px;
+    
+}
+.card-text,.card-title{
+    margin:50px;
+    font-size: medium;
+    line-height: 1.5;
+    font-weight: bold;
+}

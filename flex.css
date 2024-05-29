@@ -1,0 +1,17 @@
+h1{
+    text-align:center;
+}
+#container{
+    background-color:#003049;
+    width:90%;
+    height:500px;
+    border:5px solid #003049;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap:nowrap;
+}
+#container div{
+    height:200px;
+    width:400px;
+}

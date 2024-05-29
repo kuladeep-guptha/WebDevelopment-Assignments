@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+html {
+    /* margin: 0px; */
+    /* height: 100%; */
+    /* width: 100%; */
+    scroll-behavior: smooth;
+ }
+header{
+    background-color: bisque;
+    width:100%;
+    height:200px;
+}
+body{
+    
+     background: linear-gradient(rgb(25,8,15),rgb(78,9,34),rgb(135,30,60),rgb(63,15,35));
+    font-family: Helvetica, sans-serif ;
+    /* color:rgb(211,211,211); */
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; */
+     background-size: cover; 
+    /* background-repeat: no-repeat; */
+    /* height: 100%; */
+
+}
+.card{
+    /* background-color: blue; */
+    width: 250px;
+    height:400px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    margin: auto;
+}
+.block{
+    /* background-color: black; */
+    width: 250px;
+    height:400px;
+    position:relative;
+    margin: auto;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+.front,.back{
+    width: 100%;
+    height:100%;
+    /* border-radius: 2rem; */
+    box-shadow:0 0 5px 2px rgba(50,50,50,0.25); 
+    position: absolute;
+    backface-visibility: hidden;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+/* .front{
+    background-image: url(https://source.unsplash.com/random/350x500);
+} */
+.back{
+    /* background-color: #3a3a3a; */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    text-align: center;
+    border:10px;
+    border-color:rgb(238,212,147);
+} 
+.block:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back{
+    background:linear-gradient(rgb(94,14,39),rgb(138,18,53));
+}
+
+.front{
+    background:linear-gradient(rgb(192,160,91),rgb(238,212,147),rgb(153,113,51),rgb(230,203,129),rgb(246,243,203));
+}
+
+
+.row>*{
+    margin-top: 25px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+}
+ /* @media (max-width:619px)
+{
+    .row{
+        flex-direction: column;
+        align-content: center;
+    } 
+     .row>*{
+        margin-left: 150px;
+    } 
+}  */
+
+.card-img{
+    padding-top: 20px;
+    width:200px;
+    margin:10px,50px;
+}
+.card-link {
+    border: 1px solid grey;
+    /* margin-left: 70px; */
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: medium;
+    padding: 5px 10px;
+}
+
+
+.card-body1 a{
+    color:rgb(238,212,147);
+}
+
+.card-text,.card-title{
+    /* margin:50px; */
+    margin-top: 12px;
+    font-size: medium;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: var(--bs-font-sans-serif);
+}
+
+ 
+  .footer {
+    position: relative;
+    /* margin-top: -180px;
+     negative value of footer height  */
+    height: 80px;
+    /* clear: both; */
+    margin:40px;
+    margin-bottom:0;
+    background-color:(white);
+    margin-top:100px;
+  } 
+
+.card-body1 {
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 60px;
+    margin-bottom:200px;
+}
+/* .navbar{
+    position:fixed;
+    
+} */
+.gotopbtn{
+    
+    position: absolute;
+    width:50px;
+    height: 50px;
+    /* background: #27ae60; */
+    
+    bottom: 10px;
+    right:50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    font-size: 22px;   
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DBMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kuladeep.html">KULADEEP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yashwanth.html">YASHWANTH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sai.html">SAI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pranav.html">PRANAV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-3 ">
+                <!-- <div class="card"> -->
+                <div class="block ">
+                    <div class="front"><img
+                            src="https://tse1.mm.bing.net/th?id=OIP.d_V5Ti60n3mJuPheks-k4AHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                            class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kuladeep</h5>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- <p>i am back</p> -->
+                        <div class="card-body1">
+                            <a href="vsimages/car8.jpg" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <!-- <div class="card"> -->
+                <div class="block ">
+                    <div class="front"> <img
+                            src="https://tse1.mm.bing.net/th?id=OIP.d_V5Ti60n3mJuPheks-k4AHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                            class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Yaswanth</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- <p>i am back</p> -->
+                        <div class="card-body1">
+                            <a href="vsimages/car8.jpg" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <!-- <div class="card"> -->
+                <div class="block ">
+                    <div class="front">
+
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.d_V5Ti60n3mJuPheks-k4AHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                            class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pranav</h5>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- <p>i am back</p> -->
+                        <div class="card-body1">
+                            <a href="vsimages/car8.jpg" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <!-- <div class="card"> -->
+                <div class="block ">
+                    <div class="front">
+
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.d_V5Ti60n3mJuPheks-k4AHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                            class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sai</h5>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- <p>i am back</p> -->
+                        <div class="card-body1">
+                            <a href="vsimages/car8.jpg" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+      <a  class="gotopbtn" href="#" > <img src="C:\Users\kulad\Downloads\arrow-up-square.svg" style="width: 40px; padding-top: 10px;"> </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
